@@ -12,7 +12,9 @@ public class Product
 		//
 
 	}
-    private int name;
+
+
+    private string name;
 
     public string Name
     {
