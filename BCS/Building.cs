@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BCS
 {
-    class Building
+    public class Building
     {
         private string name;
         private string city;
@@ -14,6 +14,13 @@ namespace BCS
         private double rentAmount;
         private bool isAvailable;
 
+        public Building(string name, string city, int stars, double rentAmount)
+        {
+            this.Name = name;
+            this.City = city;
+            this.Stars = stars;
+            this.RentAmount = rentAmount;
+        }
         public string Name
         {
             get { return name; }
