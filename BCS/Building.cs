@@ -46,5 +46,15 @@ namespace BCS
             get { return isAvailable; }
             private set { isAvailable = value; }
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine($"****Building: {Name} <{Stars}>");
+            sb.AppendLine($"****Location: {City}");
+            sb.AppendLine($"****RentAmount: {RentAmount}");
+            sb.AppendLine($"****Is Available: {IsAvailable}");
+            return sb.ToString();
+        }
     }
 }
