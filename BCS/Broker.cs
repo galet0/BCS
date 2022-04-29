@@ -39,7 +39,16 @@ namespace BCS
         public double Bonus
         {
             get { return bonus; }
-            private set { bonus = value; }
+        }
+
+        public double ReceiveBonus(Building building)
+        {
+            double currentBonus = building.RentAmount * 2 * building.Stars / 100;
+            this.bonus += currentBonus;
+            building.RentBuilding();
+            this.buildings.Add(building);
+
+            return currentBonus;
         }
     }
 }

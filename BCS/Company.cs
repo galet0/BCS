@@ -39,12 +39,12 @@ namespace BCS
                 this.buildings.Add(building);
             }
         }
-        private Broker GetBrokerByName(string name)
+        public Broker GetBrokerByName(string name)
         {
             return this.brokers.Where(b => b.Name.Equals(name)).FirstOrDefault();
         }
 
-        private Building GetBuildingByName(string name)
+        public Building GetBuildingByName(string name)
         {
             return this.buildings.Where(b => b.Name.Equals(name)).FirstOrDefault();
         }
