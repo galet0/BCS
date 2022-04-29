@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BCS
 {
-    public class Building
+    public abstract class Building
     {
         private string name;
         private string city;
@@ -20,6 +20,7 @@ namespace BCS
             this.City = city;
             this.Stars = stars;
             this.RentAmount = rentAmount;
+            this.isAvailable = true;
         }
         public string Name
         {
@@ -44,9 +45,12 @@ namespace BCS
         public bool IsAvailable
         {
             get { return isAvailable; }
-            private set { isAvailable = value; }
         }
 
+        public void RentBuilding()
+        {
+            this.isAvailable = false;
+        }
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
