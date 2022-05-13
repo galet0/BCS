@@ -21,12 +21,20 @@ namespace BCS
         public string Name
         {
             get { return name; }
-            private set { name = value; }
+            private set
+            {
+                if (string.IsNullOrEmpty(value) || string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentNullException("company name", "Company name must not be null or empty!");
+                }
+
+                name = value;
+            }
         }
 
         public void AddBroker(Broker broker)
         {
-            if(GetBrokerByName(broker.Name) == null)
+            if (GetBrokerByName(broker.Name) == null)
             {
                 this.brokers.Add(broker);
             }
@@ -34,7 +42,7 @@ namespace BCS
 
         public void AddBuilding(Building building)
         {
-            if(this.GetBuildingByName(building.Name) == null)
+            if (this.GetBuildingByName(building.Name) == null)
             {
                 this.buildings.Add(building);
             }
