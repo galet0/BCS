@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCS", "BCS\BCS.csproj", "{127C729A-6B28-4C90-875C-93D9F75E90C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCS", "BCS\BCS.csproj", "{127C729A-6B28-4C90-875C-93D9F75E90C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCS.Tests", "BCS.Tests\BCS.Tests.csproj", "{2F12CD95-1D06-4370-9BD5-BE334D0FFF11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{127C729A-6B28-4C90-875C-93D9F75E90C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{127C729A-6B28-4C90-875C-93D9F75E90C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{127C729A-6B28-4C90-875C-93D9F75E90C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F12CD95-1D06-4370-9BD5-BE334D0FFF11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F12CD95-1D06-4370-9BD5-BE334D0FFF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F12CD95-1D06-4370-9BD5-BE334D0FFF11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F12CD95-1D06-4370-9BD5-BE334D0FFF11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
